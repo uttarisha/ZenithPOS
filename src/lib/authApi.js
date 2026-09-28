@@ -13,6 +13,7 @@ export const loginApi = async (email, password, role) => {
       user: data.user,
     }
   } catch (err) {
+    console.log("LOGIN ERROR:", err.response?.status, err.response?.data, err.message)
     throw new Error(extractErrorMessage(err, "Invalid email, password or role"))
   }
 }
