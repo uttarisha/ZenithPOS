@@ -6,15 +6,12 @@ import com.usshh.payload.response.AuthResponse;
 import com.usshh.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
-
+@CrossOrigin(origins = "https://pos-frontend-2-eight.vercel.app")
 public class AuthController {
 
     private final AuthService authService;
