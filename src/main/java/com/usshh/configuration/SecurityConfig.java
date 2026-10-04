@@ -47,7 +47,7 @@ public class SecurityConfig {
                 cfg.setAllowedOriginPatterns(Arrays.asList(
                         "http://localhost:5173",
                         "http://localhost:3000",
-                        "https://*.vercel.app"
+                        "https://pos-frontend-2-eight.vercel.app"
                 ));
                 cfg.setAllowedMethods(Collections.singletonList("*"));
                 cfg.setAllowCredentials(true);
